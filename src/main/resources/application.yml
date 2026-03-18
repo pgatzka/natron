@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  main:
+    banner-mode: off
+logging:
+  level:
+    org.atmosphere.cpr.AtmosphereFramework: warn
+  file:
+    name: /app/logs/natron.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: /app/logs/natron-%d{yyyy-MM-dd}.%i.log
+      max-history: 30

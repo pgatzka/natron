@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/natron
+    username: natron
+    password: natron
+logging:
+  file:
+    name: logs/natron.log
