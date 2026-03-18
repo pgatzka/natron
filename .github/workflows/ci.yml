@@ -90,7 +90,7 @@ jobs:
           docker run -d \
             --name natron \
             --restart unless-stopped \
-            -p 8080:8080 \
+            -p 6969:8080 \
             -v natron_logs:/app/logs \
             -e SPRING_DATASOURCE_URL=${{ secrets.SPRING_DATASOURCE_URL }} \
             -e SPRING_DATASOURCE_USERNAME=${{ secrets.SPRING_DATASOURCE_USERNAME }} \
